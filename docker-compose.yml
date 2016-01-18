@@ -4,7 +4,7 @@ gems:
         - /opt/gem
 
 web:
-    image: radpad/rails:2.3.0.1453005461
+    image: cliffom/rails
     environment:
         - GEM_HOME=/opt/gem
     volumes:
@@ -13,4 +13,3 @@ web:
         - gems
     ports:
         - "3000:3000"
-    command: bundle exec rails s -b 0.0.0.0
