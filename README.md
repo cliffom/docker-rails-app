@@ -7,7 +7,7 @@ _Docker Rails App Container_ is a small project giving you the essential tools t
 Getting started is as easy as cloning this repository and running a few Docker commands
 
 ```
-git clone <git repo url>
+git clone git@github.com:cliffom/docker-rails-app.git
 cd docker-rails-app
 docker-compose run --rm web bundle install
 docker-compose run --rm web rails new .
