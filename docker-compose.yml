@@ -1,0 +1,16 @@
+gems:
+    image: ubuntu:15.04
+    volumes:
+        - /opt/gem
+
+web:
+    image: radpad/rails:2.3.0.1453005461
+    environment:
+        - GEM_HOME=/opt/gem
+    volumes:
+        - .:/app
+    volumes_from:
+        - gems
+    ports:
+        - "3000:3000"
+    command: foreman start
